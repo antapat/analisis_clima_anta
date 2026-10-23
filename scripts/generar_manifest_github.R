@@ -44,10 +44,16 @@ rsconnect::writeManifest(appFiles = archivos, appMode = "shiny")
 manifest <- jsonlite::fromJSON("manifest.json", simplifyVector = FALSE)
 manifest$platform <- "4.6.0"
 for (nombre in names(manifest$packages)) {
-  if (is.null(manifest$packages[[nombre]]$description$Version)) {
-    descripcion <- file.path(find.package(nombre), "DESCRIPTION")
-    version <- unname(read.dcf(descripcion)[1, "Version"])
-    manifest$packages[[nombre]]$description <- list(Package = nombre, Version = version)
+  pkg_desc <- manifest$packages[[nombre]]$description
+  if (is.null(pkg_desc$Version) || length(pkg_desc) <= 2) {
+    ruta_pkg <- tryCatch(find.package(nombre), error = function(e) NULL)
+    if (!is.null(ruta_pkg)) {
+      archivo_desc <- file.path(ruta_pkg, "DESCRIPTION")
+      if (file.exists(archivo_desc)) {
+        dcf <- read.dcf(archivo_desc)
+        manifest$packages[[nombre]]$description <- as.list(setNames(as.character(dcf[1, ]), colnames(dcf)))
+      }
+    }
   }
 }
 json <- jsonlite::toJSON(manifest, pretty = TRUE, auto_unbox = TRUE,
