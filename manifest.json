@@ -1,0 +1,1009 @@
+{
+  "version": 1,
+  "locale": "es_PE",
+  "platform": "4.6.0",
+  "metadata": {
+    "appmode": "shiny",
+    "primary_rmd": null,
+    "primary_html": null,
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": {
+    "DBI": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "DBI",
+        "Version": "1.3.0"
+      }
+    },
+    "KernSmooth": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "KernSmooth",
+        "Priority": "recommended",
+        "Version": "2.23-26",
+        "Date": "2024-12-10",
+        "Title": "Functions for Kernel Smoothing Supporting Wand & Jones (1995)",
+        "Authors@R": "c(person(\"Matt\", \"Wand\", role = \"aut\",\n\t             email = \"Matt.Wand@uts.edu.au\"),\n\t     person(\"Cleve\", \"Moler\", role = \"ctb\",\n\t            comment = \"LINPACK routines in src/d*\"),\n             person(\"Brian\", \"Ripley\", role = c(\"trl\", \"cre\", \"ctb\"),\n                    email = \"Brian.Ripley@R-project.org\",\n\t\t    comment = \"R port and updates\"))",
+        "Note": "Maintainers are not available to give advice on using a package\nthey did not author.",
+        "Depends": "R (>= 2.5.0), stats",
+        "Suggests": "MASS, carData",
+        "Description": "Functions for kernel smoothing (and density estimation)\n  corresponding to the book: \n  Wand, M.P. and Jones, M.C. (1995) \"Kernel Smoothing\".",
+        "License": "Unlimited",
+        "ByteCompile": "yes",
+        "NeedsCompilation": "yes",
+        "Packaged": "2024-12-10 15:33:25 UTC; ripley",
+        "Author": "Matt Wand [aut],\n  Cleve Moler [ctb] (LINPACK routines in src/d*),\n  Brian Ripley [trl, cre, ctb] (R port and updates)",
+        "Maintainer": "Brian Ripley <Brian.Ripley@R-project.org>",
+        "Repository": "CRAN",
+        "Date/Publication": "2025-01-01 10:25:36 UTC",
+        "Built": "R 4.6.1; x86_64-w64-mingw32; 2026-06-24 08:32:40 UTC; windows",
+        "Archs": "x64"
+      }
+    },
+    "R6": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "R6",
+        "Version": "2.6.1"
+      }
+    },
+    "RColorBrewer": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "RColorBrewer",
+        "Version": "1.1-3"
+      }
+    },
+    "Rcpp": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "Rcpp",
+        "Version": "1.1.2"
+      }
+    },
+    "S7": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "S7",
+        "Version": "0.2.2"
+      }
+    },
+    "askpass": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "askpass",
+        "Version": "1.2.1"
+      }
+    },
+    "base64enc": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "base64enc",
+        "Version": "0.1-6"
+      }
+    },
+    "bslib": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "bslib",
+        "Version": "0.12.0"
+      }
+    },
+    "cachem": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "cachem",
+        "Version": "1.1.0"
+      }
+    },
+    "class": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "class",
+        "Priority": "recommended",
+        "Version": "7.3-23",
+        "Date": "2025-01-01",
+        "Depends": "R (>= 3.0.0), stats, utils",
+        "Imports": "MASS",
+        "Authors@R": "c(person(\"Brian\", \"Ripley\", role = c(\"aut\", \"cre\", \"cph\"),\n                    email = \"Brian.Ripley@R-project.org\"),\n             person(\"William\", \"Venables\", role = \"cph\"))",
+        "Description": "Various functions for classification, including k-nearest\n  neighbour, Learning Vector Quantization and Self-Organizing Maps.",
+        "Title": "Functions for Classification",
+        "ByteCompile": "yes",
+        "License": "GPL-2 | GPL-3",
+        "URL": "http://www.stats.ox.ac.uk/pub/MASS4/",
+        "NeedsCompilation": "yes",
+        "Packaged": "2025-01-01 07:07:13 UTC; ripley",
+        "Author": "Brian Ripley [aut, cre, cph],\n  William Venables [cph]",
+        "Maintainer": "Brian Ripley <Brian.Ripley@R-project.org>",
+        "Repository": "CRAN",
+        "Date/Publication": "2025-01-01 10:25:33 UTC",
+        "Built": "R 4.6.1; x86_64-w64-mingw32; 2026-06-24 08:33:04 UTC; windows",
+        "Archs": "x64"
+      }
+    },
+    "classInt": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "classInt",
+        "Version": "0.4-11"
+      }
+    },
+    "cli": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "cli",
+        "Title": "Helpers for Developing Command Line Interfaces",
+        "Version": "3.6.6",
+        "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"gabor@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Hadley\", \"Wickham\", role = \"ctb\"),\n    person(\"Kirill\", \"Müller\", role = \"ctb\"),\n    person(\"Salim\", \"Brüggemann\", , \"salim-b@pm.me\", role = \"ctb\",\n           comment = c(ORCID = \"0000-0002-5329-5987\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"),\n           comment = c(ROR = \"03wc8by49\"))\n  )",
+        "Description": "A suite of tools to build attractive command line interfaces\n    ('CLIs'), from semantic elements: headings, lists, alerts, paragraphs,\n    etc. Supports custom themes via a 'CSS'-like language. It also\n    contains a number of lower level 'CLI' elements: rules, boxes, trees,\n    and 'Unicode' symbols with 'ASCII' alternatives. It support ANSI\n    colors and text styles as well.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://cli.r-lib.org, https://github.com/r-lib/cli",
+        "BugReports": "https://github.com/r-lib/cli/issues",
+        "Depends": "R (>= 3.4)",
+        "Imports": "utils",
+        "Suggests": "callr, covr, crayon, digest, glue (>= 1.6.0), grDevices,\nhtmltools, htmlwidgets, knitr, methods, processx, ps (>=\n1.3.4.9000), rlang (>= 1.0.2.9003), rmarkdown, rprojroot,\nrstudioapi, testthat (>= 3.2.0), tibble, whoami, withr",
+        "Config/Needs/website": "r-lib/asciicast, bench, brio, cpp11, decor, desc,\nfansi, prettyunits, sessioninfo, tidyverse/tidytemplate,\nusethis, vctrs",
+        "Config/testthat/edition": "3",
+        "Config/usethis/last-upkeep": "2025-04-25",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.2.9000",
+        "NeedsCompilation": "yes",
+        "Packaged": "2026-04-08 18:14:45 UTC; gaborcsardi",
+        "Author": "Gábor Csárdi [aut, cre],\n  Hadley Wickham [ctb],\n  Kirill Müller [ctb],\n  Salim Brüggemann [ctb] (ORCID: <https://orcid.org/0000-0002-5329-5987>),\n  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)",
+        "Maintainer": "Gábor Csárdi <gabor@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2026-04-09 09:50:18 UTC",
+        "Built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-20 00:46:27 UTC; windows",
+        "Archs": "x64",
+        "RemoteType": "standard",
+        "RemotePkgRef": "cli",
+        "RemoteRef": "cli",
+        "RemoteRepos": "https://cran.rstudio.com/",
+        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemoteSha": "3.6.6"
+      }
+    },
+    "commonmark": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "commonmark",
+        "Version": "2.0.0"
+      }
+    },
+    "cpp11": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "cpp11",
+        "Version": "0.5.5"
+      }
+    },
+    "crosstalk": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "crosstalk",
+        "Version": "1.2.2"
+      }
+    },
+    "curl": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "curl",
+        "Version": "8.1.0"
+      }
+    },
+    "data.table": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "data.table",
+        "Version": "1.18.6.1"
+      }
+    },
+    "digest": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "digest",
+        "Version": "0.6.39"
+      }
+    },
+    "dplyr": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "dplyr",
+        "Version": "1.2.1"
+      }
+    },
+    "e1071": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "e1071",
+        "Version": "1.7-17"
+      }
+    },
+    "evaluate": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "evaluate",
+        "Version": "1.0.5"
+      }
+    },
+    "farver": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "farver",
+        "Version": "2.1.2"
+      }
+    },
+    "fastmap": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "fastmap",
+        "Version": "1.2.0"
+      }
+    },
+    "fontawesome": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "fontawesome",
+        "Version": "0.5.3"
+      }
+    },
+    "fs": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "fs",
+        "Version": "2.1.0"
+      }
+    },
+    "generics": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "generics",
+        "Version": "0.1.4"
+      }
+    },
+    "ggplot2": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "ggplot2",
+        "Version": "4.0.3"
+      }
+    },
+    "glue": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "glue",
+        "Version": "1.8.1"
+      }
+    },
+    "gtable": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "gtable",
+        "Version": "0.3.6"
+      }
+    },
+    "highr": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "highr",
+        "Version": "0.12"
+      }
+    },
+    "htmltools": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "htmltools",
+        "Version": "0.5.9"
+      }
+    },
+    "htmlwidgets": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "htmlwidgets",
+        "Version": "1.6.4"
+      }
+    },
+    "httpuv": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "httpuv",
+        "Version": "1.6.17"
+      }
+    },
+    "httr": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "httr",
+        "Version": "1.4.9"
+      }
+    },
+    "isoband": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "isoband",
+        "Version": "0.3.0"
+      }
+    },
+    "jquerylib": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "jquerylib",
+        "Version": "0.1.4"
+      }
+    },
+    "jsonlite": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "jsonlite",
+        "Version": "2.0.0",
+        "Title": "A Simple and Robust JSON Parser and Generator for R",
+        "License": "MIT + file LICENSE",
+        "Depends": "methods",
+        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroenooms@gmail.com\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Duncan\", \"Temple Lang\", role = \"ctb\"),\n    person(\"Lloyd\", \"Hilaiel\", role = \"cph\", comment=\"author of bundled libyajl\"))",
+        "URL": "https://jeroen.r-universe.dev/jsonlite\nhttps://arxiv.org/abs/1403.2805",
+        "BugReports": "https://github.com/jeroen/jsonlite/issues",
+        "Maintainer": "Jeroen Ooms <jeroenooms@gmail.com>",
+        "VignetteBuilder": "knitr, R.rsp",
+        "Description": "A reasonably fast JSON parser and generator, optimized for statistical \n    data and the web. Offers simple, flexible tools for working with JSON in R, and\n    is particularly powerful for building pipelines and interacting with a web API. \n    The implementation is based on the mapping described in the vignette (Ooms, 2014).\n    In addition to converting JSON data from/to R objects, 'jsonlite' contains \n    functions to stream, validate, and prettify JSON data. The unit tests included \n    with the package verify that all edge cases are encoded and decoded consistently \n    for use with dynamic data in systems and applications.",
+        "Suggests": "httr, vctrs, testthat, knitr, rmarkdown, R.rsp, sf",
+        "RoxygenNote": "7.3.2",
+        "Encoding": "UTF-8",
+        "NeedsCompilation": "yes",
+        "Packaged": "2025-03-26 11:36:10 UTC; jeroen",
+        "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Duncan Temple Lang [ctb],\n  Lloyd Hilaiel [cph] (author of bundled libyajl)",
+        "Repository": "CRAN",
+        "Date/Publication": "2025-03-27 06:40:02 UTC",
+        "Built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-20 00:46:27 UTC; windows",
+        "Archs": "x64",
+        "RemoteType": "standard",
+        "RemotePkgRef": "jsonlite",
+        "RemoteRef": "jsonlite",
+        "RemoteRepos": "https://cran.rstudio.com/",
+        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemoteSha": "2.0.0"
+      }
+    },
+    "knitr": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "knitr",
+        "Version": "1.52"
+      }
+    },
+    "labeling": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "labeling",
+        "Version": "0.4.3"
+      }
+    },
+    "later": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "later",
+        "Version": "1.4.8"
+      }
+    },
+    "lattice": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "lattice",
+        "Version": "0.22-9",
+        "Date": "2026-02-03",
+        "Priority": "recommended",
+        "Title": "Trellis Graphics for R",
+        "Authors@R": "c(person(\"Deepayan\", \"Sarkar\", role = c(\"aut\", \"cre\"),\n\t            email = \"deepayan.sarkar@r-project.org\",\n\t\t    comment = c(ORCID = \"0000-0003-4107-1553\")),\n              person(\"Felix\", \"Andrews\", role = \"ctb\"),\n\t      person(\"Kevin\", \"Wright\", role = \"ctb\", comment = \"documentation\"),\n\t      person(\"Neil\", \"Klepeis\", role = \"ctb\"),\n\t      person(\"Johan\", \"Larsson\", role = \"ctb\", comment = \"miscellaneous improvements\"),\n              person(\"Zhijian (Jason)\", \"Wen\", role = \"cph\", comment = \"filled contour code\"),\n              person(\"Paul\", \"Murrell\", role = \"ctb\", email = \"paul@stat.auckland.ac.nz\"),\n\t      person(\"Stefan\", \"Eng\", role = \"ctb\", comment = \"violin plot improvements\"),\n\t      person(\"Achim\", \"Zeileis\", role = \"ctb\", comment = \"modern colors\"),\n              person(\"Alexandre\", \"Courtiol\", role = \"ctb\", comment = \"generics for larrows, lpolygon, lrect and lsegments\")\n\t      )",
+        "Description": "A powerful and elegant high-level data visualization\n  system inspired by Trellis graphics, with an emphasis on\n  multivariate data. Lattice is sufficient for typical graphics needs,\n  and is also flexible enough to handle most nonstandard requirements.\n  See ?Lattice for an introduction.",
+        "Depends": "R (>= 4.0.0)",
+        "Suggests": "KernSmooth, MASS, latticeExtra, colorspace",
+        "Imports": "grid, grDevices, graphics, stats, utils",
+        "Enhances": "chron, zoo",
+        "LazyLoad": "yes",
+        "LazyData": "yes",
+        "License": "GPL (>= 2)",
+        "URL": "https://lattice.r-forge.r-project.org/",
+        "BugReports": "https://github.com/deepayan/lattice/issues",
+        "NeedsCompilation": "yes",
+        "Packaged": "2026-02-08 19:21:28 UTC; deepayan",
+        "Author": "Deepayan Sarkar [aut, cre] (ORCID:\n    <https://orcid.org/0000-0003-4107-1553>),\n  Felix Andrews [ctb],\n  Kevin Wright [ctb] (documentation),\n  Neil Klepeis [ctb],\n  Johan Larsson [ctb] (miscellaneous improvements),\n  Zhijian (Jason) Wen [cph] (filled contour code),\n  Paul Murrell [ctb],\n  Stefan Eng [ctb] (violin plot improvements),\n  Achim Zeileis [ctb] (modern colors),\n  Alexandre Courtiol [ctb] (generics for larrows, lpolygon, lrect and\n    lsegments)",
+        "Maintainer": "Deepayan Sarkar <deepayan.sarkar@r-project.org>",
+        "Repository": "CRAN",
+        "Date/Publication": "2026-02-09 06:10:13 UTC",
+        "Built": "R 4.6.1; x86_64-w64-mingw32; 2026-06-24 08:23:40 UTC; windows",
+        "Archs": "x64"
+      }
+    },
+    "lazyeval": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "lazyeval",
+        "Version": "0.2.3"
+      }
+    },
+    "leaflet": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "leaflet",
+        "Version": "2.2.3"
+      }
+    },
+    "leaflet.providers": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "leaflet.providers",
+        "Version": "3.0.0"
+      }
+    },
+    "lifecycle": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "lifecycle",
+        "Title": "Manage the Life Cycle of your Package Functions",
+        "Version": "1.0.5",
+        "Authors@R": "c(\n    person(\"Lionel\", \"Henry\", , \"lionel@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = \"aut\",\n           comment = c(ORCID = \"0000-0003-4757-117X\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Manage the life cycle of your exported functions with shared\n    conventions, documentation badges, and user-friendly deprecation\n    warnings.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://lifecycle.r-lib.org/, https://github.com/r-lib/lifecycle",
+        "BugReports": "https://github.com/r-lib/lifecycle/issues",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli (>= 3.4.0), rlang (>= 1.1.0)",
+        "Suggests": "covr, knitr, lintr (>= 3.1.0), rmarkdown, testthat (>=\n3.0.1), tibble, tidyverse, tools, vctrs, withr, xml2",
+        "VignetteBuilder": "knitr",
+        "Config/Needs/website": "tidyverse/tidytemplate, usethis",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.3",
+        "NeedsCompilation": "no",
+        "Packaged": "2026-01-07 15:00:49 UTC; lionel",
+        "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut] (ORCID: <https://orcid.org/0000-0003-4757-117X>),\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Lionel Henry <lionel@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2026-01-08 08:00:02 UTC",
+        "Built": "R 4.6.0; ; 2026-05-20 01:36:06 UTC; windows",
+        "RemoteType": "standard",
+        "RemotePkgRef": "lifecycle",
+        "RemoteRef": "lifecycle",
+        "RemoteRepos": "https://cran.rstudio.com",
+        "RemoteSha": "1.0.5"
+      }
+    },
+    "magrittr": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "magrittr",
+        "Version": "2.0.5"
+      }
+    },
+    "memoise": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "memoise",
+        "Version": "2.0.1"
+      }
+    },
+    "mime": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "mime",
+        "Version": "0.13"
+      }
+    },
+    "openssl": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "openssl",
+        "Version": "2.4.2"
+      }
+    },
+    "otel": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "otel",
+        "Version": "0.2.0"
+      }
+    },
+    "pillar": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "pillar",
+        "Version": "1.11.1"
+      }
+    },
+    "pkgconfig": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "pkgconfig",
+        "Version": "2.0.3"
+      }
+    },
+    "plotly": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "plotly",
+        "Version": "4.12.1"
+      }
+    },
+    "png": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "png",
+        "Version": "0.1-9"
+      }
+    },
+    "promises": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "promises",
+        "Version": "1.5.0"
+      }
+    },
+    "proxy": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "proxy",
+        "Version": "0.4-29"
+      }
+    },
+    "purrr": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "purrr",
+        "Version": "1.2.2"
+      }
+    },
+    "rappdirs": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "rappdirs",
+        "Version": "0.3.4"
+      }
+    },
+    "raster": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "raster",
+        "Version": "3.6-32"
+      }
+    },
+    "reactR": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "reactR",
+        "Version": "0.6.1"
+      }
+    },
+    "reactable": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "reactable",
+        "Version": "0.4.5"
+      }
+    },
+    "rlang": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "rlang",
+        "Version": "1.3.0",
+        "Title": "Functions for Base Types and Core R and 'Tidyverse' Features",
+        "Authors@R": "c(\n    person(\"Lionel\", \"Henry\", , \"lionel@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = \"aut\"),\n    person(\"mikefc\", , , \"mikefc@coolbutuseless.com\", role = \"cph\",\n           comment = \"Hash implementation based on Mike's xxhashlite\"),\n    person(\"Yann\", \"Collet\", role = \"cph\",\n           comment = \"Author of the embedded xxHash library\"),\n    person(\"Posit, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "A toolbox for working with base types, core R features like\n    the condition system, and core 'Tidyverse' features like tidy\n    evaluation.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://rlang.r-lib.org, https://github.com/r-lib/rlang",
+        "BugReports": "https://github.com/r-lib/rlang/issues",
+        "Depends": "R (>= 4.0.0)",
+        "Imports": "utils",
+        "Suggests": "cli (>= 3.1.0), covr, crayon, desc, fs, glue, knitr,\nmagrittr, methods, pillar, pkgload, rmarkdown, stats, testthat\n(>= 3.3.2), tibble, usethis, vctrs (>= 0.2.3), withr",
+        "Enhances": "winch",
+        "Biarch": "true",
+        "ByteCompile": "true",
+        "Config/build/compilation-database": "true",
+        "Config/Needs/website": "dplyr, tidyverse/tidytemplate",
+        "Config/roxygen2/version": "8.0.0",
+        "Config/testthat/edition": "3",
+        "Config/testthat/parallel": "true",
+        "Encoding": "UTF-8",
+        "NeedsCompilation": "yes",
+        "Packaged": "2026-07-01 15:54:09 UTC; lionel",
+        "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut],\n  mikefc [cph] (Hash implementation based on Mike's xxhashlite),\n  Yann Collet [cph] (Author of the embedded xxHash library),\n  Posit, PBC [cph, fnd]",
+        "Maintainer": "Lionel Henry <lionel@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2026-07-05 08:40:02 UTC",
+        "Built": "R 4.6.1; x86_64-w64-mingw32; 2026-07-14 01:01:13 UTC; windows",
+        "Archs": "x64"
+      }
+    },
+    "rmarkdown": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "rmarkdown",
+        "Version": "2.32"
+      }
+    },
+    "s2": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "s2",
+        "Version": "1.1.13"
+      }
+    },
+    "sass": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "sass",
+        "Version": "0.4.10"
+      }
+    },
+    "scales": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "scales",
+        "Version": "1.4.0"
+      }
+    },
+    "sf": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "sf",
+        "Version": "1.1-3"
+      }
+    },
+    "shiny": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "shiny",
+        "Version": "1.14.0"
+      }
+    },
+    "sourcetools": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "sourcetools",
+        "Version": "0.1.7-2"
+      }
+    },
+    "sp": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "sp",
+        "Version": "2.2-4"
+      }
+    },
+    "stringi": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "stringi",
+        "Version": "1.8.9"
+      }
+    },
+    "stringr": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "stringr",
+        "Version": "1.6.0"
+      }
+    },
+    "sys": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "sys",
+        "Version": "3.4.3"
+      }
+    },
+    "terra": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "terra",
+        "Version": "1.9-50"
+      }
+    },
+    "tibble": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "tibble",
+        "Version": "3.3.1"
+      }
+    },
+    "tidyr": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "tidyr",
+        "Version": "1.3.2"
+      }
+    },
+    "tidyselect": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "tidyselect",
+        "Version": "1.2.1"
+      }
+    },
+    "tinytex": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "tinytex",
+        "Version": "0.61"
+      }
+    },
+    "units": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "units",
+        "Version": "1.0-1"
+      }
+    },
+    "utf8": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "utf8",
+        "Version": "1.2.6"
+      }
+    },
+    "vctrs": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "vctrs",
+        "Version": "0.7.3"
+      }
+    },
+    "viridisLite": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "viridisLite",
+        "Version": "0.4.3"
+      }
+    },
+    "withr": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "withr",
+        "Version": "3.0.3"
+      }
+    },
+    "wk": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "wk",
+        "Version": "0.9.5"
+      }
+    },
+    "writexl": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "writexl",
+        "Version": "2.0.1"
+      }
+    },
+    "xfun": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "xfun",
+        "Version": "0.62"
+      }
+    },
+    "xtable": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "xtable",
+        "Version": "1.8-8"
+      }
+    },
+    "yaml": {
+      "Source": "CRAN",
+      "Repository": null,
+      "description": {
+        "Package": "yaml",
+        "Version": "2.3.12"
+      }
+    }
+  },
+  "files": {
+    "app.R": {
+      "checksum": "0b6859d361fb9d0d9396ada6fb50fd36"
+    },
+    "app_data/distritos_anta.geojson": {
+      "checksum": "4f0cad93fa1f962f824a18837c968bf8"
+    },
+    "app_data/distritos_info.rds": {
+      "checksum": "f2ac94dece0b482863a408e8c8c5a28e"
+    },
+    "app_data/distritos_sf.rds": {
+      "checksum": "2a70b1b281b877243e0a8706382e7eaa"
+    },
+    "app_data/distritos_wgs84.rds": {
+      "checksum": "260f0a6b79e0bdb2c3a319bccba670f3"
+    },
+    "app_data/P_anual_150m.tif": {
+      "checksum": "78cb5b7f9377d04814340bac5fc91b91"
+    },
+    "app_data/P_anual_wgs84.tif": {
+      "checksum": "720608401ab11deea014061d89c0a94e"
+    },
+    "app_data/provincia_sf.rds": {
+      "checksum": "843574db3ff21fed2d8f5bc89e370963"
+    },
+    "app_data/provincia_wgs84.rds": {
+      "checksum": "c91f1305ecc2b0caf6efc26e976126e3"
+    },
+    "app_data/rasters_display_150m.tif": {
+      "checksum": "98e393d74b0989ca19eab108cc2d9576"
+    },
+    "app_data/rasters_display_wgs84.tif": {
+      "checksum": "c9a0230537b4432a0a88f128113f6778"
+    },
+    "app_data/resumen_distrital.rds": {
+      "checksum": "cdf271c64544b67a42e1da500cd942ed"
+    },
+    "app_data/resumen_hidroclimatico_distrital_anta.csv": {
+      "checksum": "1ca8d9c2ff2f0e781fec9181fd694469"
+    },
+    "app_data/series_anuales.rds": {
+      "checksum": "7af0aeb66ab87b9cfa8b2f92b7dc4c73"
+    },
+    "app_data/series_anuales_2001_2025_anta.csv": {
+      "checksum": "993b003ddb93c6dcf3c5c292b5a5350d"
+    },
+    "app_data/T_anual_150m.tif": {
+      "checksum": "87bf1b35b19d1345b63f441659a6ce7c"
+    },
+    "app_data/T_anual_wgs84.tif": {
+      "checksum": "f98db3d3ae6fdc69aee2ffec06886fc6"
+    },
+    "app_data/validacion_red_estaciones.csv": {
+      "checksum": "8d90039595e71abd2f956e2b3e6267a0"
+    },
+    "Clima_Anta/Estres_Hidrico_Anta_2001_2025.tif": {
+      "checksum": "a7350e8f69a2121c6543cb014ea8278b"
+    },
+    "Clima_Anta/Estres_y_Balance_Hidrico_30m_PISCO_Anta.tif": {
+      "checksum": "e28e331ba4e85e68a938cd63e3da1a21"
+    },
+    "Clima_Anta/github_parts/manifest.csv": {
+      "checksum": "28b6e09075eb6fef051c45dfee863b05"
+    },
+    "Clima_Anta/github_parts/P_anual_30m_PISCOv3_Anta_2001_2025.tif.part01": {
+      "checksum": "fec0ab1a34429c6b3855dcb2d3481ff2"
+    },
+    "Clima_Anta/github_parts/P_anual_30m_PISCOv3_Anta_2001_2025.tif.part02": {
+      "checksum": "bc3623aa631465e69a1d172f305d5499"
+    },
+    "Clima_Anta/github_parts/T_anual_30m_PISCOt_Anta_2001_2025.tif.part01": {
+      "checksum": "f65f175c3aa3171561cab070e8987787"
+    },
+    "Clima_Anta/github_parts/T_anual_30m_PISCOt_Anta_2001_2025.tif.part02": {
+      "checksum": "f2f2ab3f03cb04ed128cf9f0b301f635"
+    },
+    "Clima_Anta/Variabilidad_y_Tendencias_PISCO_Anta_2001_2025.tif": {
+      "checksum": "e3838c2e7a9cd1a7dd6c45418564209d"
+    },
+    "DESCRIPTION": {
+      "checksum": "5166f1bc9db0257048f5e1039cbe728f"
+    },
+    "R/github_rasters.R": {
+      "checksum": "8a4324da46cfa6c6f14b33d9a82983ba"
+    },
+    "R/mod_balance_aridez.R": {
+      "checksum": "721a59ae538553f486c3cb7db7662728"
+    },
+    "R/mod_clima_anual.R": {
+      "checksum": "de1d5bced9d499ae64b92997cb9fbc19"
+    },
+    "R/mod_consulta_ubicacion.R": {
+      "checksum": "ba3e6226aa8bf3d022e69745a0c4fe47"
+    },
+    "R/mod_evolucion_tendencias.R": {
+      "checksum": "469b85cd20a3a9f6c5176e727189b27d"
+    },
+    "R/mod_guia_indicadores.R": {
+      "checksum": "3ed8e12026f21cb6c0c818c1af67ad57"
+    },
+    "R/mod_metodologia_datos.R": {
+      "checksum": "c452e21de0a90d83de78dad43a77f738"
+    },
+    "R/mod_portada_situacion.R": {
+      "checksum": "06228838915d7d46cf7a1722b12de547"
+    },
+    "R/mod_priorizacion_territorial.R": {
+      "checksum": "d7deed84300e9d2413f3745a6d87e981"
+    },
+    "R/utils_data.R": {
+      "checksum": "82a8db34e4d0f63dd35a973594f3fc0f"
+    },
+    "www/custom.css": {
+      "checksum": "32ab4df5f43f4ec2b00fe13001175175"
+    },
+    "www/logo_anta.jpg": {
+      "checksum": "11b332a6fa5f3e78abf4b5d212fcba3a"
+    }
+  },
+  "users": null
+}

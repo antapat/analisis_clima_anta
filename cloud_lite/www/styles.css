@@ -1,0 +1,25 @@
+body { background: #f4f8fb; color: #17324d; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.container-fluid { max-width: 1200px; padding: 0 18px; }
+.hero { background: linear-gradient(130deg, #0b3b60, #126d88); color: white; padding: 30px 34px; border-radius: 0 0 18px 18px; margin-bottom: 18px; }
+.hero h1 { margin: 4px 0; font-size: 2.4rem; font-weight: 750; }
+.hero p { max-width: 750px; }
+.hero-subtitle { color: #b9e9ef; font-size: 1.15rem; }
+.eyebrow { color: #94e0e9; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.scope-note { background: #fff8e7; border-left: 4px solid #d97706; border-radius: 6px; padding: 13px 17px; margin: 0 0 18px; line-height: 1.5; }
+.nav-tabs { border-bottom: 2px solid #d7e4eb; }
+.nav-tabs > li > a { color: #0b3b60; font-weight: 650; }
+.nav-tabs > li.active > a { color: #0b3b60; border-bottom: 3px solid #087e8b; }
+.section-wrap { padding: 22px 4px 34px; }
+.metric-card, .chart-card { background: white; border: 1px solid #dbe7ef; border-radius: 10px; box-shadow: 0 2px 8px rgba(15, 55, 82, .06); }
+.metric-card { min-height: 100px; padding: 17px 20px; margin-bottom: 18px; }
+.metric-card span { display: block; color: #536a7b; font-size: .86rem; }
+.metric-card strong { display: block; font-size: 1.45rem; color: #0b3b60; margin-top: 7px; }
+.chart-card { padding: 14px; margin-bottom: 12px; }
+.fineprint { color: #536a7b; font-size: .88rem; line-height: 1.5; }
+.prose { max-width: 860px; line-height: 1.65; }
+.prose h2, .prose h3 { color: #0b3b60; }
+.warning-box { background: #fff8e7; border-left: 4px solid #d97706; padding: 14px 18px; border-radius: 6px; margin: 20px 0; }
+.download-link { display: inline-block; margin: 6px 8px 6px 0; padding: 8px 12px; border: 1px solid #b8d6df; border-radius: 6px; background: white; color: #0b3b60; font-weight: 600; }
+.download-link:hover { background: #e6f4f6; text-decoration: none; }
+.footer { border-top: 1px solid #d7e4eb; color: #647887; padding: 20px 4px 30px; font-size: .82rem; }
+@media (max-width: 767px) { .hero { padding: 24px 20px; } .hero h1 { font-size: 2rem; } .chart-card { padding: 6px; } }

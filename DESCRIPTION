@@ -1,0 +1,18 @@
+Type: Application
+Title: Sistema de Informacion Hidroclimatica Territorial de Anta
+Description: Plataforma analítica para visualización de clima 2001-2025, balances hídricos y estrés a 30m.
+Version: 1.0.0
+Encoding: UTF-8
+Imports:
+    bslib,
+    dplyr,
+    htmltools,
+    jsonlite,
+    leaflet,
+    plotly,
+    reactable,
+    sf,
+    shiny,
+    terra,
+    tidyr,
+    writexl

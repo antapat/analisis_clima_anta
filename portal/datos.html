@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Datos agregados y limitaciones de la beta referencial de clima de Anta.">
+  <title>Datos y límites de uso · Clima de Anta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="topbar"><div class="wrap topbar-inner"><div class="brand">ANTA <span>· Información hidroclimática</span></div><span class="pill">Beta referencial</span></div></header>
+  <main id="contenido" class="wrap hero">
+    <a href="index.html">← Volver al inicio</a>
+    <h1>Datos agregados y límites de uso</h1>
+    <p class="lead">Estos archivos permiten revisar los resultados generales publicados por la aplicación. Los registros originales de estaciones y las capas de trabajo permanecen locales.</p>
+    <ul class="data-list">
+      <li><a href="datos/series_anuales_2001_2025_anta.csv" download>Series anuales por distrito y provincia · CSV</a><p>Estimaciones de lluvia y temperatura para 2001–2025, con anomalías calculadas respecto del periodo completo.</p></li>
+      <li><a href="datos/resumen_hidroclimatico_distrital_anta.csv" download>Resumen territorial · CSV</a><p>Indicadores modelados agregados. El WSI es un índice relativo de 0 a 100, no una probabilidad; P − ETo no mide agua disponible.</p></li>
+      <li><a href="datos/validacion_red_estaciones.csv" download>Contraste con estaciones · CSV</a><p>Métricas agregadas para Ancachuro, Soraypampa, Curahuasi y Urubamba. Las estaciones pudieron alimentar PISCO; no es validación independiente.</p></li>
+      <li><a href="datos/distritos_anta.geojson" download>Límites territoriales · GeoJSON</a><p>Polígonos usados en la aplicación para ubicar distritos y provincia.</p></li>
+    </ul>
+    <section class="notice" aria-labelledby="limites"><h2 id="limites">Antes de reutilizar los datos</h2><p>Las capas son estimaciones generadas por modelos matemáticos. El tamaño de celda de 30 m no expresa exactitud de 30 m. Hay pocas estaciones para comprobar valores locales y se detectaron discrepancias, especialmente térmicas en Soraypampa. Para decisiones sobre parcelas, infraestructura o disponibilidad de agua se requieren mediciones y estudios locales.</p></section>
+  </main>
+  <footer class="wrap footer">Sistema de Información y Análisis Hidroclimático Territorial de Anta · Versión beta referencial</footer>
+</body>
+</html>

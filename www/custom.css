@@ -1,0 +1,1018 @@
+/* ==========================================================================
+   ESTILOS INSTITUCIONALES - MUNICIPALIDAD PROVINCIAL DE ANTA
+   Gerencia de Desarrollo Urbano y Rural (GDUR)
+   Sistema de Información y Monitoreo Hidroclimático Territorial (2001–2025)
+   Resolución Espacial: 30 metros (PISCO-SENAMHI / GEE / ERA5-Land / Sentinel-2)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --primary-color: #0b3b60;
+  --primary-dark: #072238;
+  --primary-light: #0284c7;
+  --secondary-color: #1e293b;
+  --accent-gold: #f59e0b;
+  --accent-blue: #0ea5e9;
+  --accent-emerald: #10b981;
+  --accent-red: #ef4444;
+  --accent-purple: #8b5cf6;
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --radius-lg: 12px;
+  --radius-md: 8px;
+  --radius-sm: 6px;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Encabezado Institucional ────────────────────────────────────────── */
+.institutional-header {
+  background: linear-gradient(135deg, #072238 0%, #0b3b60 60%, #0f4c75 100%);
+  color: #ffffff;
+  border-bottom: 2px solid #0284c7;
+  box-shadow: 0 4px 12px rgba(7, 34, 56, 0.25);
+}
+
+.header-shell {
+  padding: 0.8rem 2rem;
+}
+
+.header-topline {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.institutional-header .header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.institutional-header .logo-img {
+  height: 52px;
+  width: auto;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 3px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.institutional-header .logo-img:hover {
+  transform: scale(1.03);
+}
+
+.institutional-header .header-institution {
+  display: flex;
+  flex-direction: column;
+}
+
+.institutional-header .institution-name {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin: 0;
+  color: #f8fafc;
+  line-height: 1.2;
+}
+
+.institutional-header .institution-unit {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #93c5fd;
+  margin: 2px 0 0 0;
+  line-height: 1.2;
+}
+
+.institutional-header .header-system {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+  padding-left: 1.5rem;
+}
+
+.institutional-header .system-kicker {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #38bdf8;
+  margin: 0 0 2px 0;
+}
+
+.institutional-header h1 {
+  font-size: 1.28rem;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.institutional-header .system-description {
+  font-size: 0.76rem;
+  color: #cbd5e1;
+  margin: 3px 0 0 0;
+  line-height: 1.25;
+}
+
+.institutional-header .header-context {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.institutional-header .context-location {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.institutional-header .context-meta {
+  font-size: 0.72rem;
+  color: #bae6fd;
+}
+
+.institutional-header .update-badge {
+  background: rgba(2, 132, 199, 0.25);
+  border: 1px solid #38bdf8;
+  color: #e0f2fe;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  letter-spacing: 0.04em;
+}
+
+/* ── Navegación Principal con Pills ──────────────────────────────────── */
+.app-navigation {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.25rem;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.app-navigation > .container-fluid {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.nav-pills .nav-link {
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.88rem;
+  border-radius: var(--radius-md);
+  padding: 0.65rem 1.15rem;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #f1f5f9;
+  color: #0b3b60;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+  box-shadow: 0 3px 10px rgba(11, 59, 96, 0.35);
+  position: relative;
+}
+
+.nav-pills .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: -0.32rem;
+  height: 3px;
+  background: var(--accent-gold);
+  border-radius: 3px 3px 0 0;
+}
+
+/* ── Banner de Alerta Territorial e Interpretativo ───────────────────── */
+.territorial-alert-banner {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border: 1px solid #a7f3d0;
+  border-left: 5px solid #059669;
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.territorial-alert-banner.alert-warning {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border: 1px solid #fde68a;
+  border-left-color: #d97706;
+}
+
+.territorial-alert-banner.alert-danger {
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+  border: 1px solid #fecaca;
+  border-left-color: #dc2626;
+}
+
+.territorial-alert-title {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: #065f46;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.territorial-alert-banner.alert-warning .territorial-alert-title {
+  color: #92400e;
+}
+
+.territorial-alert-banner.alert-danger .territorial-alert-title {
+  color: #991b1b;
+}
+
+.territorial-alert-text {
+  font-size: 0.88rem;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* ── Tarjetas de Métricas (KPI Cards) ────────────────────────────────── */
+.kpi-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+.kpi-card.kpi-precip { border-top-color: #0284c7; }
+.kpi-card.kpi-temp   { border-top-color: #ea580c; }
+.kpi-card.kpi-anom-p { border-top-color: #06b6d4; }
+.kpi-card.kpi-anom-t { border-top-color: #f97316; }
+.kpi-card.kpi-balance{ border-top-color: #10b981; }
+.kpi-card.kpi-stress { border-top-color: #ef4444; }
+.kpi-card.kpi-aridity{ border-top-color: #8b5cf6; }
+
+.kpi-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.35rem;
+}
+
+.kpi-title {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.kpi-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+.kpi-precip .kpi-icon { background: #e0f2fe; color: #0284c7; }
+.kpi-temp .kpi-icon   { background: #ffedd5; color: #c2410c; }
+.kpi-anom-p .kpi-icon { background: #cffafe; color: #0891b2; }
+.kpi-anom-t .kpi-icon { background: #fee2e2; color: #b91c1c; }
+.kpi-balance .kpi-icon{ background: #d1fae5; color: #059669; }
+.kpi-stress .kpi-icon { background: #fee2e2; color: #dc2626; }
+.kpi-aridity .kpi-icon{ background: #ede9fe; color: #6d28d9; }
+
+.kpi-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.1;
+  margin: 0.2rem 0;
+}
+
+.kpi-value-sm {
+  font-size: 1.45rem;
+  font-weight: 800;
+}
+
+.kpi-subtitle {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.kpi-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.kpi-badge-positive {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.kpi-badge-negative {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.kpi-badge-neutral {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+/* ── Paneles y Tarjetas de Contenido ─────────────────────────────────── */
+.content-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  height: calc(100% - 1.25rem);
+}
+
+.content-card-header {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.content-card-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.content-card-subtitle {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ── Filtros y Selectores Flotantes ─────────────────────────────────── */
+.control-panel {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  padding: 1.1rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.control-panel-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* ── Inspector de Píxel a 30m ────────────────────────────────────────── */
+.pixel-inspector-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: var(--radius-lg);
+  border: 1px solid #cbd5e1;
+  box-shadow: var(--shadow-md);
+  padding: 1.25rem;
+}
+
+.pixel-coords-box {
+  background: #072238;
+  color: #38bdf8;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  padding: 0.6rem 0.85rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.inspector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.inspector-item {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.55rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.inspector-item-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.inspector-item-val {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-top: 2px;
+}
+
+/* ── Badges de Categoría ────────────────────────────────────────────── */
+.badge-stress-1 {
+  background-color: #d1fae5;
+  color: #065f46;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.badge-stress-2 {
+  background-color: #fef3c7;
+  color: #92400e;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.badge-stress-3 {
+  background-color: #fed7aa;
+  color: #9a3412;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.badge-stress-4 {
+  background-color: #fee2e2;
+  color: #991b1b;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.badge-aridity-semiarid {
+  background-color: #fef3c7;
+  color: #b45309;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.badge-aridity-subhumid {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.badge-aridity-humid {
+  background-color: #dcfce7;
+  color: #15803d;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+/* ── Map Containers ─────────────────────────────────────────────────── */
+.map-container-wrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+}
+
+/* ── Distinción entre Dinámica Anual y Síntesis Multianual ──────────── */
+.temporal-type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge-anual-dynamic {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #7dd3fc;
+}
+
+.badge-multianual-synth {
+  background: #ede9fe;
+  color: #5b21b6;
+  border: 1px solid #c4b5fd;
+}
+
+/* ── Ficha Metodológica Callout ─────────────────────────────────────── */
+.methodology-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #0284c7;
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.methodology-box h4 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0b3b60;
+  margin: 0 0 0.4rem 0;
+}
+
+.methodology-box p {
+  font-size: 0.82rem;
+  color: #475569;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ── Footer Institucional ────────────────────────────────────────────── */
+.institutional-footer {
+  background: linear-gradient(135deg, #072238 0%, #0b3b60 100%);
+  color: #bae6fd;
+  padding: 1.25rem 0;
+  margin-top: 3rem;
+  border-top: 3px solid #0284c7;
+}
+
+.footer-shell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-identity p:first-child {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.footer-identity p:last-child {
+  color: #93c5fd;
+  font-size: 0.75rem;
+  margin: 2px 0 0 0;
+}
+
+.footer-provenance {
+  text-align: right;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.footer-provenance p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .header-topline, .footer-shell {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .institutional-header .header-context, .footer-provenance {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .institutional-header .header-system {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+  }
+  .app-navigation > .container-fluid {
+    overflow-x: auto;
+  }
+  .nav-pills {
+    flex-wrap: nowrap;
+    min-width: max-content;
+  }
+}
+
+/* ── Módulo de Guía y Conceptualización de Indicadores ─────────────────── */
+.guide-indicator-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-lg);
+  padding: 1.15rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.guide-indicator-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px -2px rgba(11, 59, 96, 0.08);
+  border-color: #cbd5e1;
+}
+
+.guide-card-header {
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.guide-indicator-name {
+  font-size: 0.95rem;
+  color: var(--primary-color);
+}
+
+.guide-icon-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.guide-unit-badge {
+  background-color: #f1f5f9;
+  color: #475569;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.guide-card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.guide-def-text {
+  font-size: 0.83rem;
+  color: #334155;
+  line-height: 1.45;
+  margin-bottom: 0.75rem;
+}
+
+.guide-formula-box {
+  background: #f8fafc;
+  border-left: 3px solid #0284c7;
+  border-radius: 4px;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.guide-formula-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0284c7;
+  margin-bottom: 3px;
+}
+
+.guide-formula-box code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.76rem;
+  color: #0f172a;
+  background: transparent;
+  padding: 0;
+  display: block;
+}
+
+.guide-formula-desc {
+  font-size: 0.74rem;
+  color: #64748b;
+}
+
+.guide-eval-section {
+  font-size: 0.78rem;
+  color: #334155;
+  margin-bottom: 0.75rem;
+}
+
+.guide-section-label {
+  display: block;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.guide-eval-list {
+  padding-left: 1.15rem;
+  margin-bottom: 0;
+}
+
+.guide-eval-list li {
+  margin-bottom: 3px;
+  line-height: 1.35;
+}
+
+.guide-threshold-table {
+  font-size: 0.74rem;
+}
+
+.guide-threshold-table th {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #475569;
+}
+
+.guide-action-box {
+  margin-top: auto;
+  background-color: #f0fdf4;
+  border: 1px dashed #86efac;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.7rem;
+  font-size: 0.76rem;
+  color: #166534;
+  line-height: 1.35;
+}
+
+.bg-purple {
+  background-color: #7c3aed !important;
+}
+
+.text-purple {
+  color: #7c3aed !important;
+}
+
+.bg-orange {
+  background-color: #f97316 !important;
+}
+
+/* ── Tarjetas de indicadores (mod_guia_indicadores) ─────────────────── */
+.guia-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-lg);
+  padding: 1.1rem 1.2rem;
+  box-shadow: 0 1px 4px rgba(11, 59, 96, 0.05);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.guia-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px -3px rgba(11, 59, 96, 0.10);
+  border-color: #bfdbfe;
+}
+
+.guia-card-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.1rem;
+}
+
+.guia-card-title {
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0 0 0.1rem 0;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 0.4rem;
+}
+
+.guia-card-body {
+  font-size: 0.83rem;
+  color: #334155;
+  line-height: 1.5;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.guia-card-body ul {
+  margin: 0.35rem 0 0 0;
+  padding-left: 1.1rem;
+}
+
+.guia-card-body li {
+  margin-bottom: 0.2rem;
+  line-height: 1.4;
+}
+
+.guia-card-limits {
+  font-size: 0.77rem;
+  color: #64748b;
+  background: #f8fafc;
+  border-left: 3px solid #f59e0b;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 0.45rem 0.65rem;
+  margin-top: 0.35rem;
+  line-height: 1.4;
+}
+
+/* ── Tarjetas de clases WSI ─────────────────────────────────────────── */
+.wsi-class-card {
+  border-radius: var(--radius-md);
+  padding: 0.75rem 0.9rem;
+  font-size: 0.81rem;
+  line-height: 1.45;
+  height: 100%;
+  border: 1px solid transparent;
+}
+
+.wsi-class-1 {
+  background: #d1fae5;
+  border-color: #6ee7b7;
+  color: #065f46;
+}
+
+.wsi-class-2 {
+  background: #fef9c3;
+  border-color: #fde047;
+  color: #713f12;
+}
+
+.wsi-class-3 {
+  background: #fed7aa;
+  border-color: #fdba74;
+  color: #9a3412;
+}
+
+.wsi-class-4 {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #991b1b;
+}
+
+/* ── Banner de Contexto Técnico de la Plataforma ────────────────────── */
+.platform-context-banner {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  background: linear-gradient(135deg, #0f2744 0%, #0b3b60 60%, #0e4a78 100%);
+  border-radius: var(--radius-lg);
+  border: 1px solid #1e4976;
+  box-shadow: 0 2px 8px rgba(7, 34, 56, 0.25);
+  overflow: hidden;
+}
+
+.pcb-block {
+  flex: 1;
+  padding: 0.85rem 1.1rem;
+}
+
+.pcb-block-what {
+  border-left: 3px solid #38bdf8;
+}
+
+.pcb-block-validation {
+  border-left: 3px solid #34d399;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.pcb-block-scope {
+  border-left: 3px solid #fbbf24;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.pcb-divider {
+  width: 1px;
+  background: rgba(255, 255, 255, 0.10);
+  flex-shrink: 0;
+}
+
+.pcb-label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.pcb-block-what .pcb-label       { color: #7dd3fc; }
+.pcb-block-validation .pcb-label  { color: #6ee7b7; }
+.pcb-block-scope .pcb-label       { color: #fcd34d; }
+
+.pcb-text {
+  font-size: 0.80rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.pcb-text strong {
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+.pcb-link {
+  color: #fcd34d;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pcb-link:hover {
+  color: #fef3c7;
+}
+
+@media (max-width: 991.98px) {
+  .platform-context-banner {
+    flex-direction: column;
+  }
+  .pcb-divider {
+    width: 100%;
+    height: 1px;
+  }
+  .pcb-block-what,
+  .pcb-block-validation,
+  .pcb-block-scope {
+    border-left: none;
+    border-top: 3px solid;
+  }
+  .pcb-block-what       { border-top-color: #38bdf8; }
+  .pcb-block-validation { border-top-color: #34d399; }
+  .pcb-block-scope      { border-top-color: #fbbf24; }
+}
