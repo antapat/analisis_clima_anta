@@ -101,7 +101,8 @@ ui <- page_fluid(
           div(
             class = "header-institution",
             tags$p("MUNICIPALIDAD PROVINCIAL DE ANTA", class = "institution-name"),
-            tags$p("Gerencia de Desarrollo Urbano y Rural — GDUR", class = "institution-unit")
+            tags$p("Gerencia de Desarrollo Urbano y Rural — GDUR", class = "institution-unit"),
+            tags$p("SUB GERENCIA DE PLANEAMIENTO URBANO Y ACONDICIONAMIENTO TERRITORIAL", class = "institution-subunit")
           )
         ),
         div(

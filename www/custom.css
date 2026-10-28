@@ -92,12 +92,20 @@ body {
   line-height: 1.2;
 }
 
-.institutional-header .institution-unit {
+.institutional-header .institution-unit,
+.institutional-header .institution-subunit {
   font-size: 0.72rem;
   font-weight: 500;
   color: #93c5fd;
   margin: 2px 0 0 0;
   line-height: 1.2;
+}
+
+.institutional-header .institution-subunit {
+  max-width: 24rem;
+  font-size: 0.68rem;
+  color: #cbd5e1;
+  line-height: 1.4;
 }
 
 .institutional-header .header-system {

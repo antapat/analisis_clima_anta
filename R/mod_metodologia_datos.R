@@ -29,8 +29,7 @@ mod_metodologia_datos_ui <- function(id) {
       class = "content-card mb-3",
       div(
         class = "content-card-header",
-        tags$h5(class = "content-card-title", icon("book-open"), " Protocolo Técnico Metodológico y Auditoría de Datos"),
-        tags$span(class = "badge bg-warning text-dark", "Beta referencial · evaluación en curso")
+        tags$h5(class = "content-card-title", icon("book-open"), " Protocolo Técnico Metodológico y Auditoría de Datos")
       ),
       p(
         class = "text-muted small mb-3",
@@ -129,6 +128,48 @@ mod_metodologia_datos_ui <- function(id) {
       )
     ),
 
+    # Referencias del software y de los insumos utilizados
+    div(
+      class = "content-card mb-4",
+      tags$h6(class = "content-card-title mb-3", icon("book"), " Referencias y fuentes de datos"),
+      tags$ul(
+        tags$li(
+          tags$strong("Software rpisco: "),
+          "Santos Andrade, P. (2026). rpisco: Access and Process PISCO High-Resolution Climate Grids for Peru. Paquete de R utilizado para descargar y procesar los productos PISCO. ",
+          tags$a("Autoría y cita del paquete", href = "https://paulesantos.github.io/rpisco/authors.html", target = "_blank", rel = "noopener noreferrer")
+        ),
+        tags$li(
+          tags$strong("PISCO — SENAMHI: "),
+          "PISCOp v3.0 para precipitación (2001–2025), PISCOt v1.2 para temperatura (2001–2020) y PISCOeo_pm para evapotranspiración de referencia (climatología 1981–2010). ",
+          tags$a("Referencias de los productos PISCO", href = "https://paulesantos.github.io/rpisco/", target = "_blank", rel = "noopener noreferrer")
+        ),
+        tags$li(
+          tags$strong("CHIRPS — UCSB Climate Hazards Center: "),
+          "precipitación utilizada como insumo del modelo en Google Earth Engine. ",
+          tags$a("Catálogo CHIRPS Daily", href = "https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY", target = "_blank", rel = "noopener noreferrer")
+        ),
+        tags$li(
+          tags$strong("ERA5-Land — ECMWF / Copernicus: "),
+          "temperatura y anomalías interanuales empleadas en el modelado y en la extensión de la serie térmica a 2021–2025. ",
+          tags$a("Catálogo ERA5-Land", href = "https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_LAND_MONTHLY_AGGR", target = "_blank", rel = "noopener noreferrer")
+        ),
+        tags$li(
+          tags$strong("Sentinel-2 — Copernicus / ESA: "),
+          "reflectancia de superficie para los índices NDVI y NDMI; compuesto 2019–2025 como predictor espacial. ",
+          tags$a("Catálogo Sentinel-2", href = "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED", target = "_blank", rel = "noopener noreferrer")
+        ),
+        tags$li(
+          tags$strong("SRTM — NASA / USGS: "),
+          "modelo digital de elevación de 30 m y variables derivadas de relieve. ",
+          tags$a("Catálogo SRTM", href = "https://developers.google.com/earth-engine/datasets/catalog/USGS_SRTMGL1_003", target = "_blank", rel = "noopener noreferrer")
+        ),
+        tags$li(
+          tags$strong("Cartografía y contraste local: "),
+          "archivos vectoriales locales de la provincia y sus distritos, utilizados como geometría espacial referencial, y registros de las estaciones Ancachuro, Soraypampa, Curahuasi y Urubamba para las comprobaciones de sesgo descritas en esta sección."
+        )
+      )
+    ),
+
     # Catálogo de Descargas de Datos Abiertos
     div(
       class = "content-card",
@@ -173,7 +214,7 @@ mod_metodologia_datos_ui <- function(id) {
             div(
               icon("map-marked", class = "fa-2x text-danger mb-2"),
               tags$h6(class = "fw-bold", "Límites Distritales (GeoJSON)"),
-              p(class = "small text-muted", "Geometría vectorial oficial de los 9 distritos en WGS84 para visualización en GIS.")
+              p(class = "small text-muted", "Geometría espacial referencial de los 9 distritos en WGS84 para visualización en GIS.")
             ),
             downloadButton(ns("dl_distritos_geojson"), label = "Descargar GeoJSON", class = "btn btn-outline-danger btn-sm w-100")
           )
